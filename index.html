@@ -158,13 +158,15 @@
                                         class="hidden md:block bg-primary-container text-on-primary px-6 py-2 rounded-DEFAULT font-bold hover:bg-primary active:scale-95 transition-all">Richiedi
                                         Preventivo</button>
                                 <!-- Hamburger Menu Button -->
-                                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-on-surface hover:bg-surface-container-low rounded-md transition-colors">
+                                <button id="mobile-menu-btn"
+                                        class="md:hidden flex items-center justify-center p-2 text-on-surface hover:bg-surface-container-low rounded-md transition-colors">
                                         <span class="material-symbols-outlined text-[28px]" id="menu-icon">menu</span>
                                 </button>
                         </div>
                 </div>
                 <!-- Mobile Nav Dropdown -->
-                <div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest dark:bg-slate-900 border-b border-outline-variant absolute w-full left-0 shadow-lg z-40">
+                <div id="mobile-menu"
+                        class="hidden md:hidden bg-surface-container-lowest dark:bg-slate-900 border-b border-outline-variant absolute w-full left-0 shadow-lg z-40">
                         <nav class="flex flex-col px-6 py-4 gap-4">
                                 <a class="text-primary-container font-bold text-lg hover:bg-surface-container-low dark:hover:bg-slate-800 p-2 rounded transition-colors"
                                         href="index.html">Home</a>
@@ -176,7 +178,8 @@
                                         href="file/gallery.html">Casi di Studio</a>
                                 <a class="text-on-surface-variant text-lg hover:bg-surface-container-low dark:hover:bg-slate-800 p-2 rounded transition-colors"
                                         href="file/contatti.html">Contatti</a>
-                                <button class="w-full bg-primary-container text-on-primary px-6 py-3 rounded-DEFAULT font-bold hover:bg-primary active:scale-95 transition-all mt-2">
+                                <button
+                                        class="w-full bg-primary-container text-on-primary px-6 py-3 rounded-DEFAULT font-bold hover:bg-primary active:scale-95 transition-all mt-2">
                                         Richiedi Preventivo
                                 </button>
                         </nav>
@@ -444,7 +447,7 @@
                         const mobileMenu = document.getElementById('mobile-menu');
                         const menuIcon = document.getElementById('menu-icon');
 
-                        if(menuBtn && mobileMenu) {
+                        if (menuBtn && mobileMenu) {
                                 menuBtn.addEventListener('click', () => {
                                         mobileMenu.classList.toggle('hidden');
                                         if (mobileMenu.classList.contains('hidden')) {
